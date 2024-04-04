@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mais exercicios de Somar</title>
+</head>
+<body>
+<h1>SISTEMA DE SERVIÇO MILITAR</h1>
+
+<div class="primeira">
+    <p>Digite o ano que nasceu <input type="number" id="idade"></p>
+</div>
+
+<div class="segunda">
+    <p>Digite o ano atual <input type="number" id="ano"></p>
+</div>
+
+    <div class="botao">
+        <input type="button" value="Calcular" onclick="calcular()">
+    </div>
+
+<div id="res">
+
+</div>
+
+<script> 
+    function calcular(){
+        var idade = document.querySelector('#idade').value
+        var ano = document.querySelector('#ano').value
+        var res = Number(ano - idade)
+
+        var resFinal = document.querySelector('#res')
+        // resFinal.innerHTML = `Você tem ${res} anos`
+
+        if (res < 18){
+            resFinal.innerHTML = `Você tem ${res} e é menor de idade! NÃO APTO A SERVIR!!!`
+        }else{
+            resFinal.innerHTML = `Voce tem ${res} e e maior de idade! APTO A SERVIR!!`
+        }
+    }
+</script>
+</body>
+</html>

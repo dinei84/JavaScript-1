@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mais exercicios de Somar</title>
+</head>
+<body>
+    <h1>APTO OU NÃO À VOTAR</h1>
+
+<div class="primeira">
+    <p>Digite o ano que você nasceu <input type="number" id="anona"></p>
+</div>
+
+<div class="segunda">
+    <p>Digite o ano atual <input type="number" id="anoat"></p>
+</div>
+
+    <div class="botao">
+        <input type="button" value="Calcular" onclick="calcular()">
+    </div>
+
+<div id="res">
+
+</div>
+
+<script>
+<<<<<<< HEAD
+    function calcular() {
+        var anona = document.querySelector('input#anona');
+        var anoat = document.querySelector('input#anoat');
+        var res = document.querySelector('div#res');
+        var idade = Number(anoat.value - anona.value);
+        res.innerHTML = `SUA IDADE É DE ${idade} ANOS!!`;
+
+        if (res >= 18) {
+        res.innerHTML = `Você tem ${idade} anos e é menor de idade! Você não pode votar!!`
+        }else{
+        res.innerHTML = `Você tem ${idade} anos e é maior de idade! Você pode votar!!`  
+=======
+    function calcular(){
+        var anona = document.querySelector('input#anona')
+        var anoat = document.querySelector('input#anoat')
+        var res = document.querySelector('div#res')
+        var idade = Number(anoat.value - anona.value)
+        res.innerHTML = `Sua idade é de ${idade} anos!`
+        
+        if(idade >= 18){
+            res.innerHTML = `Você tem ${idade} e é <strong>maior</strong> de idade!! pode votar!`
+        } else{
+            res.innerHTML = `Você tem ${idade} e é <strong>menor</strong> de idade! não pode votar!`
+>>>>>>> 8312a90b19397f0dffc10426b1647408bbb05870
+        }
+    }
+
+</script>
+
+</body>
+</html>

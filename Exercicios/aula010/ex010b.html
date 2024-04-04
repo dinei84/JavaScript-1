@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mais exercicios de Somar</title>
+</head>
+<body>
+<h1>SISTEMA DE MULTAS</h1>
+
+<div class="primeira">
+    <p>Digite a velocidade permitida <input type="number" id="velp"></p>
+</div>
+
+<div class="segunda">
+    <p>Digite a velocidade do carro <input type="number" id="velc"></p>
+</div>
+
+    <div class="botao">
+        <input type="button" value="Calcular" onclick="verificar()">
+    </div>
+
+<div id="res">
+
+</div>
+
+<script> 
+        function verificar(){
+    var velp = document.querySelector('#velp').value
+    var velc = document.querySelector('#velc').value
+    var vel = document.querySelector('#res')
+    res.innerHTML = `Você está a ${velc} Km/h`
+
+    if(Number(velc) > Number(velp)){
+        res.innerHTML = `Você esta a ${velc} e ultrapassou o limite de velocidade! MULTADO`
+    }else{
+        res.innerHTML = `Você esta a ${velc} dentro da veloocidade permitida!`
+    }
+}
+</script>
+</body>
+</html>

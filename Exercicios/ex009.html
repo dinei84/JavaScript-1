@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #area{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            color: white;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(71, 147, 71);
+            text-align: center;
+            line-height: 200px;
+            border: 1px SOLID black;
+            border-radius: 25px;
+            box-shadow: 1px 2px 5px black;
+        }
+    </style>
+    <title>Exercicios</title>
+</head>
+<body>
+    <div id="area">
+        Interaja...  
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+            function clicar(){            
+                a.innerText = 'Clicou!'
+                a.style.background = 'orange'            
+            }
+            function entrar(){
+                a.style.background = 'blue'                
+            }
+            function sair(){
+                a.innerText = 'Interagiu!!'
+                a.style.background = 'green'
+            }
+    </script>
+</body>
+</html>
