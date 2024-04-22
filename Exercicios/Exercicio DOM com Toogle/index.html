@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio de maipulação do DOM</title>
+</head>
+<body>
+    <main>
+        <div id="caixaNovoFuncionalidades" class="caixa">
+            <div id="caixaNovoCurso" class="caixaFuncionalidades">
+                <label for="nomeCurso">Nome do Curso</label>
+                <input type="text" name="nomeCurso" id="nomeCurso">
+                <button id="btnAdicionarNovoCursoAntes">Adicionar Antes </button>
+                <button id="btnAdicionarNovoCursoDepois">Adicionar Depois</button>
+
+            </div>
+            <div id="caixaRemoveCurso" class="caixaFuncionalidades">
+                <button id="btnRemoverCurso">Remover Selecionado</button>
+            </div>
+            <div id="caixaCursoSelecionado" class="caixaFuncionalidades">
+                <button id="btnCursoSelecionado">Curso Selecionado</button>
+            </div>
+        </div>
+        <div id="caixaCursos" class="caixa">
+            <!-- Cursos Serão Adicionados Aqui -->
+        </div>
+    </main>
+
+    <script src="scriptaulatoogle.js"></script>
+</body>
+</html>
