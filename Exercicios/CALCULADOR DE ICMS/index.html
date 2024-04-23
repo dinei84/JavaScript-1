@@ -17,6 +17,10 @@
             <input id="valordoFrete" type="number">
         </div>
         <div>
+            <label for="">Margem</label>
+            <input id="margem" type="number">
+        </div>
+        <div>
            <p>
             <label for="">Estado de Saída</label>
             <input id="estadoSaida" type="text" name="estadoSaida" list="esaida">
@@ -32,7 +36,7 @@
             <label for="iestado">Estado Destino</label>
             <select id="estadoDestino" name="estado">
 
-                <optgroup id="" label="Mais Comuns">
+                <optgroup id="maisComuns" label="Mais Comuns">
                     <option value="MT" selected >Mato Grosso</option>
                     <option value="MS">Mato Grosso do Sul</option>
                     <option value="SP">São Paulo</option>
@@ -43,7 +47,7 @@
                     <option value="SC">Santa Catarina</option>
                 </optgroup>
 
-                <optgroup id="" label="Menos Comuns">
+                <optgroup id="menosComuns" label="Menos Comuns">
                     <option value="DF">Distrito Federal</option>
                     <option value="ES">Espírito Santo</option>
                     <option value="AC">Acre</option>
@@ -65,11 +69,7 @@
                     <option value="TO">Tocantins</option>
                 </optgroup>
             </select>
-        </div>
-        <div>
-            <label for="">Margem</label>
-            <input id="" type="number">
-        </div>
+        </div>        
         <div>
             <label for="">Frete Para PJ</label>
             <input id="" type="number" readonly>
@@ -78,9 +78,11 @@
             <label for="">Frete Para PF</label>
             <input id="" type="number" readonly>
         </div>
+        <div id>
+            <button id="calcular">Calcular</button>            
+        </div>
         <div>
-            <label for="">Pedágio por Eixo</label>
-            <input id="" type="number" readonly>
+            <button id="limpar">Limpar</button>
         </div>
     </main>
 
