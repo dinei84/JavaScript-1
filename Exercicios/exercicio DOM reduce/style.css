@@ -39,9 +39,3 @@ button{
     margin-top: 5px;
     cursor: pointer;
 }
-
-#caixa_pesquisar input{
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
-}
