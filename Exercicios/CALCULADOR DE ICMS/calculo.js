@@ -67,7 +67,7 @@ function calcularFreteParaPF(valorFrete, margem, taxaICMS) {
     // Adicionando um evento de clique ao botão de limpar
     limpar.addEventListener('click', function() {
         valordoFrete.value = '';
-        margem.value = '';
+        //margem.value = '';
         estadoOrigem.value = '';
         estadoDestino.value = '';
         freteParaPJField.value = '';
