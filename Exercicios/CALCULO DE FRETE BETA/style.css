@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    background-image: url(assets/g10.jpeg);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: center right;     
+    font-family: "Noto Sans Mono", monospace;    
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+
+.container{
+    display: flex;  
+    justify-content: center;  
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    margin: auto;
+    width: 400px;
+    height: 570px;    
+    border: 3px solid black;
+    border-radius: 25px;
+    box-shadow: 10px 16px 18px rgb(50, 26, 26);    
+    background: rgb(232, 228, 228);    
+}
+
+h1{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+    color: black;
+}
+
+p{
+    font-family:sans-serif;
+    font-weight: bold;
+    color:black;
+    text-align: center;    
+    margin-bottom: 2px;    
+}
+
+input{
+    width: 85px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 10px;
+    /* margin-top: 5px; */
+    border: 3px solid rgb(4, 4, 4);
+}
+
+
+.bot1{
+    /* margin-left: 100px; */
+    font-weight: bolder;
+    cursor: pointer;
+}
+.bot2{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+#botao{    
+    background-color: green;
+    border-radius: 30px;
+}
+
+#botao:hover{
+    background-color: lightgreen;
+    color: green;
+}
+
+#clean{
+    background-color: red;
+    border-radius: 30px;
+}
+
+#clean:hover{
+    background-color: lightgoldenrodyellow;
+    color: red;
+}
+
+/* Caixinhas de texto emcima dos inputs */
+.ref{
+    width: 105px;
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 8px;    
+    padding-top: 5px; 
+    color: black;   
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 23px;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 350px;
+        height: 500px;
+    }
+    input{
+        width: 85px;
+        height: 45px;
+        font-size: 20px;
+        border-radius: 10px;
+        /* margin-top: 15px; */
+        border: 3px solid black;        
+    }
+    .ref{
+        width: 105px;
+        height: 38px;
+        margin-top: 10PX;
+        border-radius: 8px;    
+        padding-top: 5px;
+    }
+    input.bot1{
+        font-size: 15px;
+        font-weight: bolder;  
+        margin-bottom: 5px;      
+    }
+    input.bot2{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+}
