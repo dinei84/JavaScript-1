@@ -101,6 +101,9 @@ input[type='file'] {
         flex-direction: column;
         align-items: stretch;
     }
+    .acoes{
+        flex-direction: column;
+    }
 
     #entrada-de-conteudo textarea {
         width: 100%;
