@@ -1,5 +1,4 @@
-// let jantar = 100
-// let taxa = 10
+let day = 'Monday'
+let x = day.length
 
-// let total =  jantar * (100/10)
-// console.log(total)
+console.log(x)
