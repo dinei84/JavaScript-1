@@ -1,4 +1,1 @@
-let day = 'Monday'
-let x = day.length
-
-console.log(x)
+console.log('4'+'3'*'2'-'1')
