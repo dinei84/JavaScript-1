@@ -1,0 +1,42 @@
+section {
+    max-width: 1150px;
+    margin: auto;
+    margin-top: 15px;
+    border-bottom: 12px solid rgb(116, 27, 58);
+}
+
+.blk1, .blk2, .blk3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px; 
+}
+
+.blk2, .blk3 {
+    margin-top: 5px;
+}
+
+.title {
+    flex: 1;
+}
+
+.content, .content1, .content2 {
+    flex: 2;
+    text-align: center;
+    background-color: rgba(170, 166, 166, 0.442);
+    padding: 7px; 
+    box-sizing: border-box; 
+    border-radius: 5px;
+}
+
+.content1 {
+    margin-top: 0;
+}
+
+.content2 {
+    margin-top: 12px;
+}
+
+.content span, .content1 span, .content2 span {
+    display: block;
+    width: 100vh;
+}

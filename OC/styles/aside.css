@@ -1,0 +1,40 @@
+aside.assinatura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+aside.assinatura .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 10px 10px; /* Adiciona espaço entre as caixas */
+}
+
+aside.assinatura .box p {
+    margin: 5px 0;
+}
+
+
+/* /////////////////////////// */
+
+
+aside.qrcode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+aside.qrcode .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 10px 10px; 
+}
+aside.qrcode .box p {
+    margin: 5px 0;
+}
