@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container, .form-container {
+    background-color: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    max-width: 800px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 11px solid rgb(116, 27, 58);
+    border-bottom: 11px solid rgb(116, 27, 58);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.company-info {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-size: bolder;
+}
+
+.title {    
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.order-number {
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.order-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.od-campos {
+    display: flex;
+    gap: 15em;
+    margin: -13px;
+}
+
+.text {
+    width: 400px;
+    text-align: center;
+    background-color: #d3d3d3;
+    padding: 0.5rem;
+}
+
+.validity {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.contract-terms, .print-info {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+.form-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+@media print {
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+        line-height: 1.4;
+        background: #fff;
+        color: #000;
+    }
+
+    .container {
+        margin: 0;
+        padding: 1rem;
+        border: none;
+        box-shadow: none;
+        page-break-after: avoid;
+    }
+
+    .header, .order-details, .signatures, .contract-terms, .print-info {
+        page-break-inside: avoid;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .order-number {
+        font-size: 2rem;
+    }
+
+    button {
+        display: none;
+    }
+}
