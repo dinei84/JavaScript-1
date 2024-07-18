@@ -1,5 +1,5 @@
-
-header{
+/* Estilos para o cabeçalho */
+header {
     margin-top: 35px;
     display: flex;
     height: 250px;
@@ -7,24 +7,25 @@ header{
     border-bottom: 12px solid rgb(116, 27, 58);
 }
 
-img{
+img {
     width: 280px;
     height: 105px;
     margin-left: 90px;
     margin-top: 25px;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: column;
     margin-left: 75px;
 }
-h2{
+
+h2 {
     font-size: 27px;
     margin-top: 40px;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     width: 800px;
@@ -33,30 +34,15 @@ h2{
     padding-top: 35px;
 }
 
-h3{
+h3 {
     text-align: center;
     justify-content: center;
 }
 
-.number{
+.number {
     width: 800px;
     height: 70px;
     background-color: rgba(170, 166, 166, 0.442);
     margin-top: 60px;
     text-align: center;
-}
-
-
-
-
-/* Estilos para impressão */
-@media print {
-    body {
-        width: 100%;
-        margin: 0;
-    }
-    header, section, article, aside {
-        margin: auto;
-        page-break-inside: avoid;
-    }
 }

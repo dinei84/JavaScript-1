@@ -1,4 +1,5 @@
-article{
+/* Estilos para o artigo */
+article {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -6,35 +7,40 @@ article{
     margin: auto;
 }
 
-.autorizacao{
-    margin-top: 15px;    
+.autorizacao {
+    margin-top: 15px;
 }
-.autorizacao p{
+
+.autorizacao p {
     font-size: 13px;
     font-weight: bold;
 }
 
-.declaracao{
+.declaracao {
     margin-top: 10px;
     font-size: 10px;
 }
 
-.validade{
-    margin-top: 10px;    
-}
-.validade h2{
-    font-size: 17px;
+.validade {
+    margin-top: 10px;
 }
 
+.validade h2 {
+    font-size: 17px;
+}
 
 /* Estilos para impressão */
 @media print {
     body {
         width: 100%;
         margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact; /* Suporte adicional */
     }
-    header, section, article, aside {
-        margin: auto;
-        page-break-inside: avoid;
+    section.content {
+        background-color: #aaaaaa;
+    }
+    button {
+        display: none;
     }
 }

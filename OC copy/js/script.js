@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('produtoSpan').textContent = orderData.produto;
         document.getElementById('veiculoCavaloSpan').textContent = orderData.veiculoCavalo;
         document.getElementById('veiculoPlaca2Span').textContent = orderData.veiculoPlaca2;
-        document.getElementById('veiculoDollySpan').textContent = orderData.veiculoDolly;
-        document.getElementById('veiculoPlaca3Span').textContent = orderData.veiculoPlaca3;
         document.getElementById('capacidadeSpan').textContent = orderData.capacidade;
         document.getElementById('CPFmotoristaSpan').textContent = orderData.CPFmotorista;
         document.getElementById('motoristaSpan').textContent = orderData.motorista;

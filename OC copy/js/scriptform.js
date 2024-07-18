@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
             veiculoDolly: document.getElementById('veiculo-dolly').value,
             veiculoPlaca3: document.getElementById('veiculo-placa3').value,
             capacidade: document.getElementById('capacidade').value,
-            motorista: document.getElementById('motorista').value,
-            CPFmotorista: document.getElementById('CPFmotorista').value,
+            motorista: document.getElementById('motorista').value, // Corrigido
+            CPFmotorista: document.getElementById('CPFmotorista').value, // Corrigido
             previsaoCarregamento: document.getElementById('previsaoCarregamento').value,
             pedido: document.getElementById('pedido').value,
             observacoes: document.getElementById('observacoes').value

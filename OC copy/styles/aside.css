@@ -1,3 +1,4 @@
+/* Estilos para as assinaturas */
 aside.assinatura {
     display: flex;
     justify-content: space-between;
@@ -17,10 +18,7 @@ aside.assinatura .box p {
     margin: 5px 0;
 }
 
-
-/* /////////////////////////// */
-
-
+/* Estilos para o QR code */
 aside.qrcode {
     display: flex;
     justify-content: space-between;
@@ -35,18 +33,21 @@ aside.qrcode .box {
     flex: 1;
     margin: 10px 10px; 
 }
+
 aside.qrcode .box p {
     margin: 5px 0;
 }
 
-/* Estilos para impressão */
-@media print {
-    body {
-        width: 100%;
-        margin: 0;
-    }
-    header, section, article, aside {
-        margin: auto;
-        page-break-inside: avoid;
-    }
+/* Estilos para o botão de impressão */
+.imprimir {
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(116, 27, 58);
+    color: white;
 }

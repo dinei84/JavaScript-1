@@ -1,5 +1,4 @@
-/* styles/form.css */
-
+/* Estilos para o formulário */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -67,23 +66,19 @@ body {
     .form-container {
         padding: 15px;
     }
-
     .form-group {
         margin-bottom: 10px;
     }
-
     .form-group input {
         font-size: 14px;
     }
-
     .submit-btn {
         font-size: 14px;
         padding: 8px;
     }
 }
 
-
-.limpar{
+.limpar {
     height: 35px;
     margin-top: 25px;
     background-color: rgb(116, 27, 58);
