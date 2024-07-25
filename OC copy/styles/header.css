@@ -26,6 +26,14 @@ h2 {
     margin-top: 20px;
 }
 
+.number input{
+    height: 38px;
+    border: none;
+    background-color: rgba(170, 166, 166, 0.442);
+    font-size: 41px;
+    text-align: center;
+}
+
 .info {
     display: flex;
     flex-direction: column;
