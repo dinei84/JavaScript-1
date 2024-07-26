@@ -2,13 +2,13 @@
     display: flex;
     justify-content: start;
     width: 80%;
-    margin-bottom: 10px;
-    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-top: 3px;
 }
 
 .blk2 .stretched {
     display: flex;
-    flex-wrap: wrap; /* Permite a quebra de linha */
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: start;
 }
@@ -20,8 +20,8 @@
 }
 
 .content, .content1, .content2 {
-    flex: 1; /* Permite que os elementos ocupem espaço igual */
-    min-width: 200px; /* Define uma largura mínima para quebra */
+    flex: 1;
+    min-width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,12 +31,13 @@
     border-radius: 5px;
     word-wrap: break-word;
     overflow: hidden;
-    min-height: 35px; /* Define uma altura mínima para uniformidade */
+    min-height: 30px;
 }
 
 .content span, .content1 span, .content2 span {
-    width: 100%; /* Ajusta a largura do span para ocupar todo o espaço do pai */
+    width: 100%;
     text-align: center;
+    font-size: 13px;
 }
 
 .separacao {
