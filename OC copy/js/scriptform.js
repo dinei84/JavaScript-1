@@ -1,18 +1,8 @@
-function sortearNumero(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function atualizarNumeroOrdem() {
-  const orderNumber = sortearNumero(3120, 3950);
-  document.getElementById('orderNumberInput').value = orderNumber;
-}
-
 document.addEventListener('DOMContentLoaded', function() {
   atualizarNumeroOrdem();
 
   const orderData = JSON.parse(localStorage.getItem('orderData'));
   if (orderData) {
-      document.getElementById('orderNumberInput').value = orderData.orderNumberInput;
       document.getElementById('centroCustoSpan').textContent = orderData.centroCusto;
       document.getElementById('clienteSpan').textContent = orderData.cliente;
       document.getElementById('coletaSpan').textContent = orderData.coleta;
@@ -42,7 +32,6 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
   event.preventDefault();    
 
   const formData = {
-      orderNumber: document.getElementById('orderNumberInput').value,
       centroCusto: document.getElementById('centroCusto').value,
       cliente: document.getElementById('cliente').value,
       coleta: document.getElementById('coleta').value,
