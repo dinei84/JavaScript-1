@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Simplificado de Cálculo</title>
+</head>
+<body>
+    <input type="number" id="valor1" placeholder="Digite um número">
+    <input type="number" id="valor2" placeholder="Digite outro número">
+    <button onclick="realizarCalculo()">Calcular</button>
+    <p id="resultado"></p>
+    <script>
+        function realizarCalculo() {
+            const numero1 = parseFloat(document.getElementById('valor1').value);
+            const numero2 = parseFloat(document.getElementById('valor2').value);
+            
+            if (isNaN(numero1) || isNaN(numero2)) {
+                document.getElementById('resultado').textContent = 'Por favor, insira números válidos.';
+                return;
+            }
+            
+            const resultado = numero1 + numero2;
+            document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
+        }
+    </script>
+</body>
+</html>
