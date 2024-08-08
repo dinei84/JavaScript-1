@@ -7,7 +7,7 @@
     <title>Formulário de Ordem de Carga</title>  
 </head>
 <body>
-    <section class="form-container">
+    <section id="form">
         <h1 class="form-title">Formulário de Ordem de Carga</h1>
         <form id="orderForm" class="order-form">
             <div class="form-group">
@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label for="armazem">COLETA ARMAZEM</label>
-                <input type="text" id="armazem">
+                <input type="text" id="armazem" name="armazem">
             </div>
             <div class="form-group">
                 <label for="coletaUF">UF COLETA</label>
@@ -83,7 +83,7 @@
                 <input type="text" id="observacoes" name="observacoes">
             </div>
             
-            <button type="submit" class="submit-btn">Gerar Ordem</button>
+            <button type="button" class="submit-btn" onclick="submitForm()">Gerar Ordem</button>
 
             <button id="clean" class="limpar" type="button">LIMPAR</button>
         </form>
