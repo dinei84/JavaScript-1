@@ -23,3 +23,7 @@ if (window.location.pathname.endsWith('index.html')) {
     document.getElementById('pedidoSpan').innerText = formData.pedido;
     document.getElementById('observacoesSpan').innerText = formData.observacoes;
 }
+
+document.getElementById('imprimir').addEventListener('click', function() {
+    window.print();
+});
