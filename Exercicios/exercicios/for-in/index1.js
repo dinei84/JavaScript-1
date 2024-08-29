@@ -1,3 +1,5 @@
+// Programa que conta a quantidade de propriedades de um objeto
+
 const pessoa = {
     nome: "João",
     idade: 30,
@@ -15,5 +17,5 @@ const pessoa = {
   }
   
   const numProp = contarPropriedades(pessoa);
-  console.log(numProp); // Output: 3
+  console.log(numProp); 
   

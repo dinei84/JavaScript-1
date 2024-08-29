@@ -1,3 +1,5 @@
+// Programa que adiciona somente as propriedades de um objeto a um array
+
 const carro = {
     marca: 'Chevrolet',
     modelo: 'Onix',

@@ -1,3 +1,5 @@
+// Programa para ler os valores do objeto e retornar a soma deles
+
 const produtos = {
     maçã: 5,
     banana: 10,
