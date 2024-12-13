@@ -33,6 +33,15 @@ function listarProdutos(categoria){
     }
 }
 
+function deletarPorId(){
+    for(let i = 0; i < produtos.length; i++){
+        if(produtos[i].id === id){
+            produtos.splice(i, 1);
+            return true;
+        }
+    }
+    return false;
+}
 
 adicionarProduto(2, "Notebook", "Eletrônicos", 2.5);
 
